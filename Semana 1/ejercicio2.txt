@@ -1,0 +1,47 @@
+2- Cree un algoritmo que describa su rutina diaria. Use condiciones, condiciones multiples y ciclos.
+
+Respuesta:
+
+1- Inicio
+2- Me despierto entre las 11am y las 12md.
+3- Me lavo los dientes.
+4- Saludo a mi familia y le escribo a mi novia.
+5- Desayuno.
+6- Hago quehaceres en el hogar:
+    a. Lavo mi ropa.
+    b. Lavo los platos.
+    
+    c. etc.
+7- Si es un dia que veo a mi novia:
+    a. Agarro el carro y manejo hasta su casa.
+    b. Si es un dia que vamos a salir:
+        i. Vamos a un parque, o al cine, o a hacer algun mandado.
+        ii. Vamos a comer.
+    c. Sino, nos quedamos en la casa de ella, o vamos a mi casa:
+        i. Pedimos comida a domicilio, o hacemos algo para cocinar juntos.
+        ii. Vemos peliculas, o vemos anime, o vemos una seria.
+        iii. Jugamos videojuegos, o juegos de mesa.
+        iv. Hacemos otras actividades.
+8- Sino, es un dia que hago una actividad con la familia:
+    a. Veo peliculas con mi mama, o salgo a comer con mi papa, o juego con mi sobrino, o la paso con mis hermanas.
+9- Sino, es un dia para mi:
+    a. Estudio.
+    b. Hago mis tareas.
+    c. Juego videojuegos solo.
+    d. Leo un libro, o veo videos de youtube, o me quedo en la cama viendo tiktoks.
+10- Si es un dia que trabajo:
+    a. Espero la microbus a las 9pm.
+    b. Entro a trabajar a las 10pm
+    c. Mientras estoy trabajando me reparto las tareas con mis compañeros:
+        i. Hacer RTA (Real Time Analyst)
+        ii. Apruebar OT (Horas extras a los asesores)
+        iii. Respondor correos
+        iv. Codificar horarios
+        vi. etc
+    d. Finalizo el trabajo a las 4am
+    e. Espero la microbus
+    f. Llego a la casa y me duermo
+11- Sino, si es un dia libre:
+    a. Despues de haber hecho la rutina del dia, me conecto a jugar videojuegos con mis amigos
+    b. Me acuesto tipo 1am o 2am 
+12- Fin

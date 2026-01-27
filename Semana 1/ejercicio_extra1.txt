@@ -1,0 +1,35 @@
+1- Cree un algoritmo como preparar una fiesta sorpresa para un amigo o familiar. Considere si la persona está en casa o no, si los invitados ya llegaron o no, qué hacer mientras esperan, y cómo finaliza la fiesta
+
+Respuesta:
+1- Inicio.
+2- Elegir a la persona a la que se le hara la fiesta.
+3- Elegir el dia de la fiesta.
+4- Enviar las invitaciones.
+5- Hacer una lista de las cosas necesarias:
+    a.Comida y bebidas
+    b. Decoraciones.
+    c. Musica.
+    d. El queque.
+    e. Los regalos.
+6- En el dia da la fiesta:
+    a. Si la persona esta en la casa:
+        i. Pedirle a alguien que la saque de la casa y la distraiga.
+    b. Sino, aprovechar el tiempo para decorar y organizar todo.
+7- Si ya llegaron todos los invitados:
+    a. Apagar las luces.
+    b. Preparar las camaras o celulares para las fotos y videos.
+8- Sino, llamar a los invitados para asegurarse que lleguen antes que la persona de la fiesta.
+9- Cuando la persona llegue:
+    a. Gritar “Sorpresa!”
+    b. Tomar fotos y videos.
+10- Mientras la fiesta este en marcha:
+    a. Poner musica.
+    b. Comer y compartir.
+    c. Contar cumpleaños.
+    d. Comer pastel y helados.
+    e. Abrir los regalos.
+11- Cuando la fiesta termine:
+    a. Agradecer a los invitados por llegar
+    b. Recoger y limpiar
+    c. Despedirse
+12- Fin

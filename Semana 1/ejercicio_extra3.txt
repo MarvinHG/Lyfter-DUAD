@@ -1,0 +1,42 @@
+3- Cree un algoritmo de como se prepara para ir a su viaje de diversión favorito”
+
+Respuesta:
+
+1- Inicio
+2- Elejo el destino del viaje.
+3- Verifico la fecha del viaje y hago una lista de lo necesario:
+    a. Ropa adecuada al clima.
+    b. Documentos (identificación, boletos, reservaciones).
+    c. Dinero o tarjetas.
+    d. Artículos personales (cepillo, cargador, medicamentos, etc.).
+4- Un día antes del viaje:
+    a. Empaco todo en la maleta.
+    b. Reviso si falta algo.
+    c. Cargo los dispositivos electrónicos.
+    d. Dormo temprano para descansar bien.
+5- El día del viaje:
+    a. Desperto temprano.
+    b. Me bano y me visto con ropa cómoda.
+    c. Reviso nuevamente los documentos.
+    d. Si voy en carro:
+        i. Cargo las maletas y viajo.
+    e. Sino, reviso si el transporte ya llegó (bus, taxi, avión):
+        i. Cargo las maletas y viajo.
+6- Mientras voy de camino:
+    a. Tomo fotos.
+    b. Escucho música o hablo con los acompañantes en caso de tener 
+    c. disfruto del paisaje.
+7- Llego al destino y me registro en el hotel o lugar de hospedaje.
+8- Mientras estoy en el lugar:
+    a. Visito lugares turísticos.
+    b. Como cosas nuevas.
+    c. Compro recuerdos.
+    d. Me relajo.
+9- Al final del viaje:
+    a. Empaco de nuevo.
+    b. Reviso que no se quede nada.
+    c. Regreso a casa.
+    d. Descanso y veo las fotos del viaje.
+10- Fin
+
+---

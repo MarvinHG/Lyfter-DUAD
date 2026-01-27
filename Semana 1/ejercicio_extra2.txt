@@ -1,0 +1,25 @@
+2- Cree un algoritmo que represente cómo prepararse para un examen importante. Debe incluir una lista de actividades (leer, repasar, practicar), condiciones como si ya entendió la materia, o si tiene dudas, y un ciclo que se repita hasta sentirse listo
+
+Respuesta:
+
+1- Inicio
+2- Hacer una lista de temas que entran en el examen.
+3- Organizar el tiempo de estudio (por horas o días).
+4- Mientras no se sienta completamente listo:
+    a. Leer los apuntes y materiales de clase.
+    b. Resumir los temas más importantes.
+    c. Practicar con ejercicios o exámenes anteriores.
+    d. Si ya entiende todos los temas:
+        i. Repasar nuevamente para reforzar la memoria.
+    e. Sino, si hay algo que no entiende:
+        i. Buscar explicaciones en internet o libros.
+        ii. Preguntar al profesor o compañeros.
+    f. Tomar descansos cortos cada cierto tiempo.
+5- Cuando se sienta listo:
+    a. Preparar el material para el examen (lápiz, borrador, calculadora, etc.)
+    b. Dormir bien la noche anterior.
+    c. Despertar temprano el día del examen.
+    d. Desayunar algo ligero.
+    e. Llegar al lugar del examen con tiempo.
+6- Realizar el examen con calma y concentración.
+7- Fin
