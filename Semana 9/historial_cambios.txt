@@ -1,0 +1,7 @@
+" commit 0f12b3d30ec6855446d55d7248cef016d26512ff (HEAD -> semana9, origin/past-exercises, past-exercises)
+Author: Marvin Hernandez G <marvin.ahg@gmail.com>
+Date:   Sat Jan 24 18:48:30 2026 -0600
+
+    Added past exercises " 
+
+En estos cambios lo que hice fue hacer un request para anadir los ejercicios de la semana 1 a la semana 8 para que sean revisados por mis tutores de Lyfter
