@@ -1,10 +1,10 @@
 # This module contains the main menu functions for the student management system.
-from actions import is_valid_name, is_valid_section, student_exists, is_valid_grade, sort_students_by_average, export_students_to_csv, imported_students_from_csv, get_student, delete_student, get_failed_students
-from data import students
+from actions import is_valid_name, is_valid_section, student_exists, is_valid_grade, sort_students_by_average, get_student, delete_student, get_failed_students
+from data import imported_students_from_csv , export_students_to_csv
 
 
 # ========== Function to fill student information ========== 
-def menu_1_fill_student_info():
+def menu_1_fill_student_info(students):
     # Loop to allow adding multiple students
     while True:
         # Create a dictionary to store student information
@@ -32,7 +32,7 @@ def menu_1_fill_student_info():
                 continue
 
             # Calling the function to check if the student already exists
-            if student_exists(full_name, section): 
+            if student_exists(students, full_name, section): 
                 print("\nEl estudiante ya existe en esa sección.\n")
                 continue
 
@@ -82,7 +82,7 @@ def menu_1_fill_student_info():
 
 
 # ========== Function to show students information ========== 
-def menu_2_view_all_students():
+def menu_2_view_all_students(students):
     if not students: # Check if there are no students registered
         print("\nNo hay estudiantes registrados actualmente.\n")
         return # Exit the function if there are no students to show
@@ -105,7 +105,7 @@ def menu_2_view_all_students():
 
 
 # ========== Function to show the Top 3 average grades ========== 
-def menu_3_top_3_students():
+def menu_3_top_3_students(students):
     # Check if there are no students registered
     if not students:
         print("\nNo hay estudiantes registrados para mostrar.\n")
@@ -125,7 +125,7 @@ def menu_3_top_3_students():
 
 
 # ========== Function to show the average grade among all students' grades ==========
-def menu_4_average_grade():
+def menu_4_average_grade(students):
     # Check if there are no students registered
     if not students: 
         print("\nNo hay estudiantes registrados para calcular el promedio.\n")
@@ -138,7 +138,7 @@ def menu_4_average_grade():
 
 
 # ========== Function to export data to CSV ==========
-def menu_5_export_data_to_csv():
+def menu_5_export_data_to_csv(students):
     # Check if there are no students registered
     if not students:
         print("\nNo hay datos para exportar.\n")
@@ -154,7 +154,7 @@ def menu_5_export_data_to_csv():
 
 
 # ========== Function to import data from CSV ==========
-def menu_6_import_data_from_csv(): 
+def menu_6_import_data_from_csv(students): 
     #   Call the function to import students from CSV and store the result in a variable
     imported_students = imported_students_from_csv() 
 
@@ -172,7 +172,7 @@ def menu_6_import_data_from_csv():
 
 
 # ========== Function to delete a student (to be implemented) ==========
-def menu_7_delete_student():
+def menu_7_delete_student(students):
     # Check if there are no students registered
     if not students:
         print("\nNo hay estudiantes registrados para eliminar.\n")
@@ -181,7 +181,7 @@ def menu_7_delete_student():
     full_name = input("Ingrese el nombre completo del estudiante a eliminar: ").strip()
     section = input("Ingrese la sección del estudiante (ejemplo 10A): ").strip()
     # Validate the name and section inputs
-    if not student_exists(full_name, section):
+    if not student_exists(students, full_name, section):
         print("\nEl estudiante no existe.\n")
         return
     # Get the student information to show it before confirming deletion
@@ -204,7 +204,7 @@ def menu_7_delete_student():
 
 
 # ========== Function to show failed students (to be implemented) ==========
-def menu_8_show_failed_students():
+def menu_8_show_failed_students(students):
     # Check if there are no students registered
     if not students:
         print("\nNo hay estudiantes registrados.\n")
@@ -230,7 +230,7 @@ def menu_8_show_failed_students():
 
 
 # ========== Menu Function ========== 
-def menu():
+def menu(students):
     # Main menu loop (keeps running until the user chooses to exit)
     while True:
         print("\n===== SISTEMA DE GESTIÓN DE ESTUDIANTES =====")
@@ -248,28 +248,28 @@ def menu():
         option  = input("Seleccione una opción: ")
         if option  == "1":
             # Call the function to fill student information
-            menu_1_fill_student_info()
+            menu_1_fill_student_info(students)
         elif option  == "2":
             # Call the function to show student information
-            menu_2_view_all_students()
+            menu_2_view_all_students(students)
         elif option  == "3":
             # Call the function to show the Top 3 average grades
-            menu_3_top_3_students()
+            menu_3_top_3_students(students)
         elif option  == "4":
             # Call the function to show the average grade among all students' grades
-            menu_4_average_grade()
+            menu_4_average_grade(students)
         elif option  == "5":
             # Call the function to export data to CSV
-            menu_5_export_data_to_csv()
+            menu_5_export_data_to_csv(students)
         elif option  == "6":
             # Call the function to import data from CSV
-            menu_6_import_data_from_csv()
+            menu_6_import_data_from_csv(students)
         elif option  == "7":
             # Call the function to delete a student
-            menu_7_delete_student()
+            menu_7_delete_student(students)
         elif option  == "8":
             # Call the function to show failed students
-            menu_8_show_failed_students()
+            menu_8_show_failed_students(students)
         elif option  == "9":
             # Exit the program
             print("Saliendo del sistema...")
