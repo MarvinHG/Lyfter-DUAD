@@ -8,12 +8,13 @@ Cree una estructura de objetos que asemeje un Double Ended Queue.
     No se permite el uso de tipos de datos compuestos como lists, dicts o tuples ni módulos como collections.
 '''
 class Node:
-    # Represents a single element (node) in the Stack
+    # Represents a single element (node) in doubly linked Deque
     data: str
 
-    def __init__(self, data, next=None):
+    def __init__(self, data):
         self.data = data # data: value stored in the node
-        self.next = next # next: reference to the next node in the stack
+        self.next = None # next: reference to the next node in the Deque
+        self.prev = None # prev: reference to the prev node in the Deque
 
 
 class Deque:
@@ -21,7 +22,7 @@ class Deque:
         self.head = None
         self.tail = None
 
-    #Method to Add a new node to the head(left) of the stack
+    #Method to Add a new node to the head(left) of the Deque
     def push_left(self, data):
         new_node = Node(data)
 
@@ -33,10 +34,12 @@ class Deque:
 
         # Connect new node to first node
         new_node.next = self.head
+        # Connect the previous head to the new node
+        self.head.prev = new_node
         # Move head pointer
         self.head = new_node
     
-    #Method to Add a new node to the tail(right) of the stack
+    #Method to Add a new node to the tail(right) of the Deque
     def push_right(self, data):
         new_node = Node(data)
 
@@ -45,14 +48,15 @@ class Deque:
             self.head = new_node
             self.tail = new_node
             return
-
+        
+        # Connect new node to the last node
+        new_node.prev = self.tail
         # Connect last node to new node
         self.tail.next = new_node
-
         # Move tail pointer
         self.tail = new_node
 
-    #Method to Remove the head(left) node from the stack
+    #Method to Remove the head(left) node from the Deque
     def pop_left(self):
         # Check if Deque is empty
         if self.head is None:
@@ -62,11 +66,15 @@ class Deque:
         # Move head pointer to the next node (removing current head)
         self.head = self.head.next
 
+        # if the head is not empty, remove the previous node
+        if self.head is not None:
+            self.head.prev = None
+
         # If the head is empty the tail should be empty
         if self.head is None:
             self.tail = None
 
-    #Method to Remove the tail(right) node from the stack
+    #Method to Remove the tail(right) node from the Deque
     def pop_right(self):
         # Check if Deque is empty
         if self.head is None:
@@ -79,20 +87,17 @@ class Deque:
             self.tail = None
             return
 
-        current_node = self.head
+        # current_node = self.head
 
-        while current_node.next != self.tail:
-            current_node = current_node.next
+        self.tail = self.tail.prev
+        self.tail.next = None
 
-        # current_node is now the penultimate node
-        current_node.next = None
-        self.tail = current_node
 
-    #Method to Print all elements in the stack from top to bottom
+    #Method to Print all elements in the Deque from top to bottom
     def print_deque(self):
         current_node = self.head
 
-        # If stack is empty, notify user
+        # If Deque is empty, notify user
         if current_node is None:
             print("El Deque está vacío")
             return
