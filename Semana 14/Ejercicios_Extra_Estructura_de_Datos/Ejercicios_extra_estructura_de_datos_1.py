@@ -44,7 +44,10 @@ class Queue:
         self.rear = None
 
     # Method to Add a new node to the end of the queue
-    def enqueue(self, new_node):
+    def enqueue(self, data):
+
+        # Create the new node internally
+        new_node = Node(data)
 
         # Check if queue is empty
         if self.front is None:
@@ -107,9 +110,9 @@ queue = Queue()
 
 print("== Agregando nodos ==")
 
-queue.enqueue(Node("A"))
-queue.enqueue(Node("B"))
-queue.enqueue(Node("C"))
+queue.enqueue("A")
+queue.enqueue("B")
+queue.enqueue("C")
 
 print("\n== Queue actual ==")
 queue.print_all()
